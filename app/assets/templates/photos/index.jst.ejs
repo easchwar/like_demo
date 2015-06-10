@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Photos Index</h1>
+  <div class="row photos"> 
+    <% photos.each(function(photo) { %>
+      <img src="<%= photo.escape('url') %>" data-id="<%= photo.id %>" class="photo" > 
+      <br>
+    <% }); %>
+  </div>
+</div>
