@@ -1,0 +1,11 @@
+<img src="<%= photo.escape('url') %>" data-id="<%= photo.id %>" class="photo" > 
+<button class="toggle">
+  <% if (photo.isLiked()) { %>
+    Hate! 
+  <% } else { %>
+    Like!
+  <% } %>
+</button>
+<%= photo.get('numLikes') %> ♥
+<br>
+<br>

@@ -7,6 +7,10 @@ LikeDemo.Models.Photo = Backbone.Model.extend({
     }
     return this._like;
   },
+
+  isLiked: function() {
+    return !this.like().isNew();
+  },
   
   parse: function(response) {
     console.log(response);

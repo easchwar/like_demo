@@ -6,4 +6,6 @@ json.array! @photos do |photo|
       json.extract! like, :id
     end
   end
+
+  json.numLikes photo.likes.count
 end
