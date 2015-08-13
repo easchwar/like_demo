@@ -13,7 +13,6 @@ LikeDemo.Models.Photo = Backbone.Model.extend({
   },
   
   parse: function(response) {
-    console.log(response);
     if (response.like) {
       this.like().set(response.like);
     }
